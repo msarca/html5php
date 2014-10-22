@@ -93,6 +93,23 @@ class Tokenizer
     
     protected $tempBuffer;
     protected $dataBuffer;
+    protected $tagNameBuffer;
+    protected $attrNameBuffer;
     
+    public function parse(UTF8String $string)
+    {
+        $codePoint = &$string->getCodePoints();
+        
+        
+        
+        for($i = 0, $length = count($codePoint); $i < $length; $i++)
+        {
+            $c = $codePoint[$i];
+            
+            switch($c)
+            {
+                
+            }
+        }
+    }
 }
-

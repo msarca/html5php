@@ -202,6 +202,11 @@ class UTF8String implements ArrayAccess
     {
         return $this->codepoints[$index];
     }
+    
+    public function &getCodePoints()
+    {
+        return $this->codepoints;
+    }
    
     public function __toString()
     {
